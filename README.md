@@ -1,2 +1,2 @@
 # About
-This is a website about JSarthurliao and Ducl=k.
+This is a website about JSarthurliao and Duck.
