@@ -1,34 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://use.typekit.net/atk1vxi.css">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="animations/search.css">
   <link rel="stylesheet" href="animations/dropdown.css">
+  <link rel="stylesheet" href="elements/button.css">
+  <link rel="stylesheet" href="functions/search.js">
   <title>JS's Website</title>
 </head>
 <body>
   <nav class="top-bar">
     <div class="logo">JS's Website</div>
     <ul class="bar-links">
-      <li><a href="#main.html">Main</a></li>
-      <li class="dropdown">
-        <a href="#about.html">About<img src="sources/svg/stat_minus_2.svg" alt="About dropdown button" width="15" height="15" class="arrow"></a>
-        <div class="about">
-          <a href="about/this-website.html">This Website</a>
+      <li class="link">
+        <a href="main.html">Main<img class="arrow" src="sources/png/arrow_512.png" width="30px" height="30px"></a>
+        <div class="dropdown">
+          <a class="below" href="about-this-website.html">Site Map</a>
         </div>
       </li>
-      <li><a href="#sitemap">SiteMap</a></li>
-      <li><a href="#project">Project</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li>
-        <ul class="search">
-          <!-- <input>type="text" placeholder="Search"> -->
-          <button class="search-btn"><class="fas fa-search"></button>
-          <div class="serach-a"><img src="images/search.png" height="20px"></div>
-        </ul>
+      <li class="link">
+        <a href="about.html">About<img class="arrow" src="sources/png/arrow_512.png" width="30px" height="30px"></a>
+        <div class="dropdown">
+          <a class="below" href="about-this-website.html">This Website</a>
+        </div>
       </li>
-    
+
+      <!--
+      <li class="about">
+        <a href="about.html">About<img src="sources/png/arrow_512.png" alt="About dropdown button" width="15" height="15" class="arrow"></a>
+          <a href="about-this-website.html">This Website</a>
+      -->
+
+      <li><a href="project">Project</a></li>
+      <li><a href="contact">Contact</a></li>
+      <li>
+        <div class="search">
+          <img class="search-bar" src="sources/svg/search.svg" width="20px" height="20px">
+          <input type="text" placeholder="Seach through this website!">
+        </div>
+      </li>
   </ul>
       </nav>
     

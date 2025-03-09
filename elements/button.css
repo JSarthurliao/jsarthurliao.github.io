@@ -1,0 +1,20 @@
+/* 基本按鈕樣式 */
+.button {
+    background-color: #f5f5f6; /* 綠色背景 */
+    border: none; /* 無邊框 */
+    color: white; /* 白色文字 */
+    padding: 15px 32px; /* 內邊距 */
+    text-align: center; /* 文字居中 */
+    text-decoration: none; /* 無下劃線 */
+    display: inline-block; /* 行內塊元素 */
+    font-size: 16px; /* 字體大小 */
+    margin: 4px 2px; /* 外邊距 */
+    cursor: pointer; /* 鼠標指針 */
+    border-radius: 12px; /* 圓角邊框 */
+  }
+  
+  /* 按鈕按下效果 */
+  .button:active {
+    background-color: #dac5afa0; /* 按下時的背景顏色 */
+    transform: translateY(4px); /* 按下時的位移效果 */
+  }

@@ -1,0 +1,46 @@
+
+/* import fonts from https://fonts.google.com/ */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* top-bar */
+.top-bar {
+  padding: 2%;
+  width: 100%;
+  background: rgba(245, 245, 246, 0.85);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-bar .logo {
+  margin-left: 2%;
+  font-family: "Noto Sans", serif;
+  font-size: 40px;
+  font-weight: 750;
+  color: #a8937ca0;
+}
+
+/* links */
+.bar-links{
+  display: flex;
+  list-style-type: none;
+}
+
+.bar-links li a{
+  display: flex;
+  padding: 5px 20px; 
+  line-height: 30px; 
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  color: #85594f;
+  font-weight: 750;
+}
+
+.bar-links li a:hover{
+  background-color: rgba(218, 197, 175, 0.65);
+}
