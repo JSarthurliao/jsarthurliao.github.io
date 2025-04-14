@@ -3,16 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JS's Website_About</title>
+  <link rel="stylesheet" href="https://use.typekit.net/atk1vxi.css">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="elements/search.css">
+  <link rel="stylesheet" href="elements/dropdown.css">
+  <link rel="stylesheet" href="elements/button.css">
+  <link rel="stylesheet" href="functions/search.js">
+  <title>JS's Community_About</title>
 </head>
 <body>
-  <div class="top-bar" id="header"></div>
+  <div class="top-bar" id="top"></div>
   <script>
     // import data from index.html
     fetch('index.html')
       .then(response => response.text())
       .then(data => {
-        document.getElementById('header').innerHTML = data;
+        document.getElementById('top').innerHTML = data;
       });
   </script>
+
+  <!-- <script>
+    // 使用 JavaScript 動態加載導航欄
+    function loadNav() {
+      var xhr = new XMLHttpRequest();
+      xhr.open('GET', 'index.html', true);
+      xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+          var tempDiv = document.createElement('div');
+          tempDiv.innerHTML = xhr.responseText;
+          var nav = tempDiv.querySelector('nav');
+          if (nav) {
+            document.getElementById('top').innerHTML = nav.outerHTML;
+          }
+        }
+      };
+      xhr.send();
+    }
+
+    // 確保 DOM 加載完成後執行
+    document.addEventListener('DOMContentLoaded', loadNav);
+  </script> -->
 </body>
+</html>

@@ -3,48 +3,42 @@
   <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://use.typekit.net/atk1vxi.css">
   <link rel="stylesheet" href="index.css">
-  <link rel="stylesheet" href="animations/search.css">
-  <link rel="stylesheet" href="animations/dropdown.css">
+  <link rel="stylesheet" href="elements/search.css">
+  <link rel="stylesheet" href="elements/dropdown.css">
   <link rel="stylesheet" href="elements/button.css">
+  <link rel="stylesheet" href="functions/click.js">
   <link rel="stylesheet" href="functions/search.js">
-  <title>JS's Website</title>
+  <title>JS's Community</title>
 </head>
 <body>
-  <nav class="top-bar">
-    <div class="logo">JS's Website</div>
+  <div class="top-bar">
+    <!-- logo -->
+    <a class="logo" href="main.html">JS's Community</a>
+
+    <!-- links -->
     <ul class="bar-links">
       <li class="link">
-        <a href="main.html">Main<img class="arrow" src="sources/png/arrow_512.png" width="30px" height="30px"></a>
+        <a href="main.html">Main<img id="arrow" alt="" src="icons/png/arrow_512.png"></a>
         <div class="dropdown">
-          <a class="below" href="about-this-website.html">Site Map</a>
+          <a class="below" href="sitemap.html">Site Map</a>
         </div>
       </li>
       <li class="link">
-        <a href="about.html">About<img class="arrow" src="sources/png/arrow_512.png" width="30px" height="30px"></a>
+        <a href="about.html">About<img id="arrow" src="icons/png/arrow_512.png" width="30px" height="30px"></a>
         <div class="dropdown">
-          <a class="below" href="about-this-website.html">This Website</a>
+          <a class="below" href="this-website.html">This Website</a>
         </div>
       </li>
-
-      <!--
-      <li class="about">
-        <a href="about.html">About<img src="sources/png/arrow_512.png" alt="About dropdown button" width="15" height="15" class="arrow"></a>
-          <a href="about-this-website.html">This Website</a>
-      -->
-
-      <li><a href="project">Project</a></li>
-      <li><a href="contact">Contact</a></li>
-      <li>
-        <div class="search">
-          <img class="search-bar" src="sources/svg/search.svg" width="20px" height="20px">
-          <input type="text" placeholder="Seach through this website!">
+      <li><a href="project.html">Project</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <div>
+        <img id="search-button" alt="search" src="icons/svg/search.svg">
+        <div id="search-bar">
+          <input type="text" id="search-text" onkeyup="myFunction()" placeholder="Search thorough this website!">
         </div>
-      </li>
-  </ul>
-      </nav>
-    
-  </nav>
+      </div>
+    </ul>
+  </div>
 </body>
 </html>

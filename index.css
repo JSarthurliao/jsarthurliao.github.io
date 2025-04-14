@@ -1,44 +1,50 @@
-
 /* import fonts from https://fonts.google.com/ */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 body {
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 
 /* top-bar */
 .top-bar {
+  height: 2%;
   padding: 2%;
-  width: 100%;
-  background: rgba(245, 245, 246, 0.85);
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  background: rgba(245, 245, 246, 0.85);
+  overflow: hidden;
 }
 
 .top-bar .logo {
-  margin-left: 2%;
+  align-items: center;
+  margin-left: 2vh;
   font-family: "Noto Sans", serif;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 750;
-  color: #e6caace4;
+  text-decoration: none;
+  color: rgba(230, 202, 172, 0.89);
+  cursor: pointer;
 }
 
 /* links */
 .bar-links{
+  align-items: center;
   display: flex;
   list-style-type: none;
 }
 
 .bar-links li a{
+  align-items: center;
   display: flex;
   padding: 5px 20px; 
-  line-height: 30px; 
   border-radius: 5px;
   font-family: "Roboto", sans-serif;
   text-decoration: none;
   color: #85594f;
-  font-weight: 750;
+  font-weight: 700;
 }
 
 .bar-links li a:hover{

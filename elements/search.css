@@ -1,0 +1,74 @@
+/* import fonts from https://fonts.google.com/ */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+#search-button {
+  width: 25px;
+  height: 25px;
+  padding: 5px 5px;
+  background-color: rgba(218, 197, 175, 0.4);
+  border-radius: 50%;
+  /* transition: background 0.3s; */
+}
+
+/* defining the serach bar style */
+#search-text {
+  display: none;
+  position: absolute;
+  padding: 10px 30px;
+  border: 1.75px solid #85594f;
+  outline-color: rgba(230, 202, 172, 0.89);
+  border-radius: 100px;
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+
+.search-bar {
+  position: absolute;
+  right:140%;
+  top: 50px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s, visibility 0.3s;
+} 
+
+/* click to open */
+ .search-bar:hover .active{
+  display: block;
+  transition: translateY(-20px);
+  opacity: 1;
+  visibility: visible;
+  animation: pull 0.5s backwards 0.225s;
+} 
+/*
+ .search-pic {
+  display: none;
+  position: absolute;
+  transform: translateX(-50%);
+  transition: opacity 0.2s, visibility 1s;
+} */
+
+/*
+ input[type="text"] {
+  padding: 8px 12px;
+  border: 2px solid #85594f;
+  border-radius: 20px;
+  outline: none;
+  width: 200px;
+} 
+ #results {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  max-height: 300px;
+  overflow-y: auto;
+  margin-top: 10px;
+}
+
+.result-item {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.result-item:hover {
+  background-color: #f0f0f0;
+}*/

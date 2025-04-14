@@ -1,5 +1,8 @@
 {
     "recommendations": [
-        "hancel.serialport-helper"
+        "ms-vscode.notepadplusplus-keybindings", 
+        "ms-vsliveshare.vsliveshare", 
+        "ms-vscode.live-server",
+        "Aizhe.3d-html-viewer"
     ]
 }
