@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="topbar.css">
   <link rel="stylesheet" href="elements/search.css">
   <link rel="stylesheet" href="elements/dropdown.css">
   <link rel="stylesheet" href="elements/button.css">
-  <link rel="stylesheet" href="functions/click.js">
   <link rel="stylesheet" href="functions/search.js">
+  <link rel="stylesheet" href="index.css">
   <title>JS's Community</title>
 </head>
+
 <body>
   <div class="top-bar">
     <!-- logo -->
-    <a class="logo" href="main.html">JS's Community</a>
+    <a class="logo" href="index.html">JS's Community</a>
 
     <!-- links -->
     <ul class="bar-links">
       <li class="link">
-        <a href="main.html">Main<img id="arrow" alt="" src="icons/png/arrow_512.png"></a>
+        <a href="index.html">Main<img id="arrow" alt="" src="icons/png/arrow_512.png"></a>
         <div class="dropdown">
           <a class="below" href="sitemap.html">Site Map</a>
         </div>
@@ -40,5 +42,37 @@
       </div>
     </ul>
   </div>
+  <div class="banner">
+    <div class="topic">
+      <div><a>Creative</a></div>
+      <div><a>Design</a></div>
+      <div><a>Project</a></div>
+      <div><a>Ideas</a></div>
+    </div>
+  </div>
+	<section class=project>
+		<article class="blocks" id="code">
+			<a class="title">Code</a>
+			<div class="paragraph">
+				<h3>Repositories on Github</h3>
+				<p>We host coding projects, strike up to gunctional things as possible as we can!</p>
+				<p>Over years, we support overall of <a class="pj">3 repositories project, 1 include server partnership help!</a></p>
+				<button class="explore">Explore more <a class="point">></a></button>
+			</div>
+		</article>
+		<article class="blocks" id="design">
+			<a class="title">Design</a>
+			<div class="paragraph">
+				<h3>Legendary icon system</h3>
+				<p>The first thing we try.</p>
+				<p>Our first try to created our own legendary icon system , planned to used everywhere insude our website, Discord server, and more!</p>
+	<button class="explore">Explore more <a class="point">></a></button>
+			</div>
+		</article>
+	</section>
+	<section style="display: flex;">
+	<p style="flex: 7; background-color: lightblue;">This is a paragraph taking 70%</p>
+	<a style="flex: 3; background-color: lightcoral;">This is a link taking 30%</a>
+</section>	
 </body>
 </html>
