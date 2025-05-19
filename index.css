@@ -5,7 +5,7 @@ body {
     padding: 0;
     width: 100%;
     overflow-x: hidden;
-    background-color: rgba(184, 155, 124, 0.5);
+    background-color: rgba(184, 155, 124, 0.5); /* #b89b7c80 */
 }
 
 /* part one */
@@ -14,7 +14,7 @@ body {
     width: 99.55%;
     height: 45vh;
     border-radius: 10px;
-    background-color: rgba(230, 202, 172, 0.45);
+    background-color: rgba(230, 202, 172, 0.45); /* #e6caac73 */
     margin: 3px;
     overflow: hidden;
     background-image: ;
@@ -27,7 +27,7 @@ body {
     font-family: "Bricolage Grotesque", sans-serif;
     font-weight: 800;
     font-size: 40px;
-    color: rgba(20, 28, 44, 0.8);
+    color: rgba(20, 28, 44, 0.8); /* #141c2dcc */
 }
 .topic {
 	height: 50px;
@@ -79,19 +79,19 @@ body {
 	justify-content: center;
 }
 .paragraph {
-	flex: 40%;
-	padding: 5px 25px;
-	background-color: rgba(245, 245, 246, 0.9); /* #f5f5f6d9 */
-	border-radius: 20px;
+    flex: 40%;
+    padding: 5px 25px;
+    background-color: rgba(245, 245, 246, 0.75); /* #f5f5f6bf */
+    border-radius: 20px;
 }
 .paragraph h3 {
     font-family: "Roboto", sans-serif;
-    font-weight: ;
+    font-weight: 900;
     font-size: 30px;
 }
 .paragraph p {
     position: relative;
-    bottom: 20;
+    bottom: 20px;
     margin: 10px 20px;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
@@ -100,15 +100,15 @@ body {
     line-height: 1.25;
 }
 .explore {
-	position: relative;
-	bottom: 8px;
-	margin: 5px 15px;
-	padding: 8px 25px;
-	border-radius: 2px;
-	background-color: rgba(238, 243, 241, 0.85); /* #f5f5f6 */
-	font-family: "Space Grotesk", sans-serif;
-	font-size: 15px;
-	font-weight: 900;
+    position: relative;
+    bottom: 8px;
+    margin: 5px 15px;
+    padding: 8px 25px;
+    border-radius: 2px;
+    background-color: rgba(230, 224, 219, 0.4); /* #e6e0db66 */
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 15px;
+    font-weight: 900;
 }
 .explore:hover .point {
     transform: translateX(8px);
@@ -120,39 +120,39 @@ body {
 }
 /*code*/
 #code {
-	background-color: rgba(74, 76, 84, 1); /* #4a4c54 */
+    background-color: rgba(74, 76, 84, 1); /* #4a4c54 */
 }
 #code .title {
-	color: rgba(245, 245, 246, 0.5); /* #4a4c54 */
+    color: rgba(245, 245, 246, 0.5); /* #f5f5f680 */
 }
 #code h3 {
-	color: rgba(74, 76, 84, 1);
+    color: rgba(74, 76, 84, 1); /* #4a4c54 */
 }
 #code p {
-	color: rgba(123, 149, 166, 1);
+    color: rgba(123, 149, 166, 1); /* #7b95a6 */
 }
 #code .pj {
-	font-weight: 700;
-	color: rgba(184, 155, 124);
+    font-weight: 700;
+    color: rgba(184, 155, 124, 1); /* #b89b7c */
 }
 #code .explore {
-  border: 2px solid rgba(74, 76, 84, 1);
-  color: rgba(74, 76, 84, 0.8);
+  border: 2px solid rgba(74, 76, 84, 1); /* #4a4c54 */
+  color: rgba(74, 76, 84, 0.8); /* #4a4c54cc */
 }
 /*design*/
 #design {
-    background-color: rgba(179, 89, 49, 1); /*#3a4579*/
+    background-color: rgba(179, 89, 49, 1); /* #b35931 */
 }
 #design .title {
-	color: rgba(230, 223, 215, 0.5);
+    color: rgba(230, 223, 215, 0.5); /* #e6dfd780 */
 }
 #design h3 {
-	color: rgba(179, 89, 49, 1);
+    color: rgba(179, 89, 49, 1); /* #b35931 */
 }
 #design p {
-	color: rgba(200, 146, 99, 1);
+    color: rgba(200, 146, 99, 1); /* #c89263 */
 }
 #design .explore {
-	border: 2px solid rgba(179, 89, 49, 1);
-	color: rgba(179, 89, 49, 0.8);
-};
+    border: 2px solid rgba(179, 89, 49, 1); /* #b35931 */
+    color: rgba(179, 89, 49, 0.8); /* #b35931cc */
+}
