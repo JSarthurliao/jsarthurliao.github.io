@@ -7,6 +7,14 @@ body {
     overflow-x: hidden;
     background-color: rgba(184, 155, 124, 0.5); /* #b89b7c80 */
 }
+::selection {
+    background: rgba(76, 110, 99, 0.5); /* #4c6e63 */
+    color: rgba(20, 28, 44, 0.8); /* #141c2dcc */
+}
+::-moz-selection {
+    background: rgba(76, 110, 99, 0.5); /* #4c6e63 */
+    color: rgba(20, 28, 44, 0.8); /* #141c2dcc */
+}
 
 /* part one */
 .banner {
@@ -30,7 +38,7 @@ body {
     color: rgba(20, 28, 44, 0.8); /* #141c2dcc */
 }
 .topic {
-	height: 50px;
+	/* height: 50px; */
 	overflow: hidden;
 }
 .topic > div > a{
@@ -101,6 +109,7 @@ body {
 }
 .explore {
     position: relative;
+    display: inline-block;
     bottom: 8px;
     margin: 5px 15px;
     padding: 8px 25px;
@@ -109,14 +118,26 @@ body {
     font-family: "Space Grotesk", sans-serif;
     font-size: 15px;
     font-weight: 900;
+    text-decoration: none;
+    color: inherit;
 }
 .explore:hover .point {
     transform: translateX(8px);
 }
+.link {
+    color: inherit;
+    text-decoration: none;
+}
 .point {
 	margin-left: 2px;
+    color: inherit;
+    text-decoration: none;
 	display: inline-block;
 	transition: 0.25s ease-in-out;
+}
+.link a {
+  text-decoration: none;
+  color: inherit;
 }
 /*code*/
 #code {
