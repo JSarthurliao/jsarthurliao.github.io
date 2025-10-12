@@ -1,6 +1,11 @@
-/* dropwdown */
+/* dropdown */
 .dropdown {
   display: none;
+  position: absolute;
+  padding: 3px;
+  border-radius: 5px;
+  background: rgba(245, 245, 246, 0.6);
+  box-shadow: 0 2px 8px rgba(144, 147, 152, 0.08);
 }
 .link .dropdown::after {
   animation: pullback 0.5s forwards 0.225s;

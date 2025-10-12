@@ -14,16 +14,18 @@
 
 <body>
   <!-- importing topbar from './topbar.html'-->
-  <div id="topbar-container"></div>
+  <div id="topbar"></div>
 </body>
-
+<style>
+  
+</style>
 </html>
 <script>
   document.addEventListener("DOMContentLoaded", function() {
     fetch("topbar.html")
       .then(response => response.text())
       .then(data => {
-        document.getElementById("topbar-container").innerHTML = data;
+        document.getElementById("topbar").innerHTML = data;
       })
       .catch(error => console.error('Error loading topbar:', error));
   });

@@ -9,6 +9,8 @@ body {
 /* top-bar */
 .top-bar {
   position: fixed;
+  overflow: visible;
+  z-index: 1000;
   justify-content: space-between;
   top: 0;
   left: 0;
@@ -18,11 +20,12 @@ body {
   padding: 5px 40px;
   border-radius: 5px;
   align-items: center;
-  background-color: rgba(245, 245, 246, 0.6); /* #f5f5f6 */
-  overflow: hidden;
+  background: rgba(245, 245, 246, 0.8); /* #f5f5f6 */
+  backdrop-filter: blur(15px);
+  box-shadow: 0 2px 8px rgba(58, 71, 105, 0.1);
 }
 .logobox {
-	flex: 40%;
+	flex: 80%;
 }
 .logo {
 	padding:2px 20px;
@@ -38,7 +41,8 @@ body {
 
 /* links */
 .linkbox {
-	flex: 30%;
+  /* position: relative; */
+	flex: 20%;
 }
 .bar-links {
 	display: flex;
@@ -59,5 +63,5 @@ body {
 }
 
 .bar-links li a:hover{
-  background-color: rgba(218, 197, 175, 0.65); /* #dac5af */
+  background-color: rgba(218, 197, 175, 1); /* #dac5af */
 }

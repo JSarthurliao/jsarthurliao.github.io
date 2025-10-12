@@ -1,20 +1,75 @@
-/* 基本按鈕樣式 */
-.button {
-    background-color: #f5f5f6; /* 綠色背景 */
-    border: none; /* 無邊框 */
-    color: white; /* 白色文字 */
-    padding: 15px 32px; /* 內邊距 */
-    text-align: center; /* 文字居中 */
-    text-decoration: none; /* 無下劃線 */
-    display: inline-block; /* 行內塊元素 */
-    font-size: 16px; /* 字體大小 */
-    margin: 4px 2px; /* 外邊距 */
-    cursor: pointer; /* 鼠標指針 */
-    border-radius: 12px; /* 圓角邊框 */
-  }
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+:root {
+  --default: rgba(230, 202, 172, 0.9); /* #e6caac */
+  --header: rgba(133, 89, 79, 1); /* #85594f */
+  --style-one: rgba(74, 76, 84, 1); /* #4a4c54 */
+  --style-two: rgba(186, 151, 101, 0.87); /* #4c6e63 */
+  --transparency-one:  rgba(230, 224, 219, 0.3); /* #f5f5f6 */
+}
+
+body {
+  margin: 20px;
+}
   
-  /* 按鈕按下效果 */
-  .button:active {
-    background-color: #dac5afa0; /* 按下時的背景顏色 */
-    transform: translateY(4px); /* 按下時的位移效果 */
-  }
+.description-one h1 {
+  font-family: "Bricolage Grotesque", sans-serif;
+  color: var(--header);
+}
+.description-one p {
+  position: relative;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--style-two);
+  text-indent: 1em;
+  line-height: 1.1;
+  bottom: 15px;
+}
+
+.description-two {
+
+}
+
+.button-table {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 10px;
+  row-gap: 5px;
+}
+.button-container {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.button {
+  display: inline-block;
+  padding: 8px 25px;
+  border: none;
+  border-radius: 100px;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center; 
+}
+
+.style-one {
+  background-color: var(--transparency-one);
+  color: var(--style-one);
+}
+.style-two {
+  background-color: var(--transparency-one);
+  color: var(--style-two);
+}
+.style-three {
+  background-color: var(--transparency-one);
+  color: var(--style-three);
+}
+.style-four {
+  background-color: var(--transparency-one);
+  color: var(--style-four);
+}
+.style-five {
+  background-color: var(--transparency-one);
+  color: var(--style-five);
+}

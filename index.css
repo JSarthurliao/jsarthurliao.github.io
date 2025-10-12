@@ -8,12 +8,12 @@ body {
     background-color: rgba(184, 155, 124, 0.5); /* #b89b7c80 */
 }
 ::selection {
-    background: rgba(76, 110, 99, 0.5); /* #4c6e63 */
-    color: rgba(20, 28, 44, 0.8); /* #141c2dcc */
+    background: rgba(33, 70, 107, 0.736); /* #4c6e63 */
+    color: rgba(245, 245, 246, 0.8); /* #141c2dcc */
 }
 ::-moz-selection {
-    background: rgba(76, 110, 99, 0.5); /* #4c6e63 */
-    color: rgba(20, 28, 44, 0.8); /* #141c2dcc */
+    background: rgba(33, 70, 107, 0.736); /* #4c6e63 */
+    color: rgba(245, 245, 246, 0.8); /* #141c2dcc */
 }
 
 /* part one */
@@ -74,14 +74,12 @@ body {
 	border-radius: 12px;
 }
 .title {
-	flex: 12%;
-	margin-left: 25px;
+	flex: 15%;
 	font-family: "Space Grotesk", sans-serif;
 	font-optical-sizing: auto;
 	font-weight: 700;
 	font-style: normal;
-	font-size: 30px;
-	text-align: center;
+	font-size: 40px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -123,10 +121,6 @@ body {
 }
 .explore:hover .point {
     transform: translateX(8px);
-}
-.link {
-    color: inherit;
-    text-decoration: none;
 }
 .point {
 	margin-left: 2px;
