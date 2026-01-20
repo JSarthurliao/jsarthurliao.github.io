@@ -26,11 +26,15 @@ function translate(markdown) {
       return `<h2 class="${style}">${line.replace(/^## /, '').trim()}</h2>`;
     } else if (/^# /.test(line)) {
       return `<h1 class="${style}">${line.replace(/^# /, '').trim()}</h1>`;
-    } else if (/^\*\*\*/.test(line)) {
+    } else if (/^\-\-\-/.test(line)) {
       return `<hr class="${style}">`;
+    } else if (/^\*/.test(line) && /\*$/.test(line)) {
+      return `<i class="${style}">${line.replace(/^\*|\*$/g, '').trim()}</i>`;
+    } else if (/^\*\*/.test(line) && /\*\*$/.test(line)) {
+      return `<b class="${style}">${line.replace(/^\*\*|\*\*$/g, '').trim()}</b>`;
     }
     return line;
-  }).join('\n');
+  }).join('<br>');
 }
 
 console.log(translate(markdown));

@@ -3,41 +3,47 @@
 .footer {
 	padding: 25px 0;
 	display: flex;
-    flex-direction: column;
+	flex-direction: column;
 	align-items: center;
-    width: 100%;
-    height: 200px;
-    background-color: rgba(245, 245, 246, 0.5); /* #f5f5f6 */
-    gap: 10px 0;
+	width: 100%;
+	height: 200px;
+	background-color: rgba(245, 245, 246, 0.5);
+	/* #f5f5f6 */
+	gap: 10px 0;
 }
+
 .content {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
+
 .content a {
 	padding: 0 10px;
 	border-radius: 3px;
 	font-family: "Space Grotesk", sans-serif;
-	font-size: 18px;
+	font-size: 12px;
 	font-weight: 900;
-	color: rgba(230, 202, 172, 0.9); /* #e6caac */
-	background-color: rgba(230, 224, 219, 0.1); /* #f5f5f6 */
+	color: rgba(11, 42, 72, 0.8);
+	background-color: rgba(230, 224, 219, 0.1);
+	/* #f5f5f6 */
 }
+
 #year {
 	position: relative;
-	left: 2px;
 }
 
 .contacts {
 	display: flex;
-	/*justify-content: center;*/
+	/* justify-content: center; */
 }
+
 .contacts img {
 	margin: 5px;
-	width: 40px;
+	width: 50px;
 	height: 40px;
 }
+
 .sub {
 	position: relative;
 	top: 80px;
