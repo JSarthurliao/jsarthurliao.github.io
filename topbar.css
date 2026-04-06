@@ -7,7 +7,7 @@ body {
 }
 
 /* top-bar */
-.top-bar {
+.topbar {
   position: fixed;
   overflow: visible;
   z-index: 1000;
@@ -24,9 +24,11 @@ body {
   backdrop-filter: blur(40px);
   box-shadow: 0 2px 8px rgba(58, 71, 105, 0.1);
 }
-.logobox {
-	flex: 80%;
+/* .logobox {
+  flex: 80%;
 }
+
+*/
 .logo {
 	border-radius: 10px;
   font-family: "Noto Sans", serif;
