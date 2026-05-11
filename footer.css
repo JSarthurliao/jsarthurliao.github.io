@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap');
 
 :root {
-	--image-size: 60px;
+	--image-size: 30px;
 	--color-brand: rgba(11, 42, 72, 0.8);
 }
 
@@ -31,7 +31,7 @@ body {
 	padding: 0 10px;
 	border-radius: 3px;
 	font-family: "Space Grotesk", sans-serif;
-	font-size: 20px;
+	font-size: 15px;
 	font-weight: 700;
 	background-color: rgba(230, 224, 219, 0.1);
 	/* #f5f5f6 */
@@ -42,8 +42,10 @@ body {
 }
 
 .contacts {
+	width: 100%;
 	display: flex;
-	/* justify-content: center; */
+	justify-content: center;
+	padding-left: 20px;
 }
 
 .contacts img {
@@ -55,8 +57,9 @@ body {
 
 .sub {
 	position: relative;
+	top: -5px;
 	font-family: "Roboto", sans-serif;
-	font-size: 15px;
+	font-size: 12px;
 	font-weight: 400;
 	/* color: rgba(86, 111, 111, 1); */
 }

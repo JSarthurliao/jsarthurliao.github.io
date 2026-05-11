@@ -6,6 +6,10 @@ body {
   width: 100%;
 }
 
+.space {
+  padding: 40px 100px;
+}
+
 /* top-bar */
 .topbar {
   position: fixed;
